@@ -1,0 +1,51 @@
+.hideNotification span {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    background-color: #9E9E9E;
+    content: "";
+    margin-top: 10px;
+    transform: translateX(3px);
+}
+.hideNotification {
+    cursor: pointer;
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 8px 0px;
+    float: right;
+    right: 20px;
+}
+
+.hideNotification span::before {
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: #9E9E9E;
+    margin-top: -4px;
+    transform: translateX(3px);
+    content: "";
+}
+
+.hideNotification span::after {
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: #9E9E9E;
+    margin-top: 5px;
+    transform: translateX(-3px);
+    content: "";
+}
+
+.controls {
+    padding: 4px 20px;
+    display: block;
+    height: 40px;
+    width: 360px;
+}
+
+.cards{
+    width: 400px;
+    height: 276px;
+}

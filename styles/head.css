@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', arial, 'Noto Sans Japanese', sans-serif;
+}
+
+#topBar {
+    position: absolute;
+    z-index: 1;
+    background: #e67e22;
+    box-sizing: border-box;
+    height: 64px;
+    width: 100%;
+    padding: 16px;
+    vertical-align: middle;
+}
+
+#rightButtons {
+    align-items: center;
+    float: right;
+    position: relative;
+}
+
+.iconClass {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 2px 0px 2px;
+    align-items: center;
+    display: block;
+    float: left;
+    color: white;
+    height: 24px;
+    width: 24px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: white url(../source/image/new_icons.png);
+    background-size: 24px 48px;
+}
+
+#notifications {
+    float: right;
+    background-position: 0 0px;
+    margin: 5px;
+    color: black;
+    height: 20px;
+    width: 20px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    color: white;
+    position: absolute;
+    left: 6.5px;
+    top: 37px;
+    z-index: 2;
+    border-bottom-width: 8px !important;
+    border: 8px dashed transparent;
+    border-top-width: 0;
+    border-bottom: solid #EEEEEF;
+    visibility: hidden;
+}
+
+.window-head {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 44px;
+    background-color: #EEEEEF;
+    border: 1px solid #ccc;
+    transition: width 0.3s, height 0.3s;
+
+}
+
+#roundAvatar {
+    float: right;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0px 0px 0px 10px;
+    height: 32px;
+    width: 32px;
+    background-image: url(../source/image/lion_test.png);
+    background-size: 32px 32px;
+}
+
+.notification-window {
+    width: 400px;
+    height: 400px;
+}
+
+.window_content {
+}
+
+.login-window {
+    width: 200px;
+    height: 100px;
+}
+
+#triangleAva {
+    left: 48px;
+}
+
+.isShow {
+    visibility: visible;
+}
