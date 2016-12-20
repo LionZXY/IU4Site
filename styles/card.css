@@ -21,13 +21,14 @@
     border-radius: 3px;
     transition: background-color 0.5s;
 }
+
 .card_background:hover {
     background-color: #d7d7d7;
 }
 
 .card_texts {
-    position: fixed;
-    margin: 16px 16px 16px 100px;
+    padding-top: 16px;
+    margin: 0px 16px 16px 100px;
     overflow: hidden;
 }
 
@@ -42,9 +43,30 @@
     width: 240px;
     font-size: 12px;
     max-height: 28px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; /* Многоточие */
 }
+
+.hide {
+    transition: padding 0.5s, opacity 0.3s;
+    animation: hidden 0.5s;
+    opacity: 0;
+    padding-left: 400px;
+}
+
+@keyframes hidden {
+    99% {display: inherit   ;}
+    100% { display: none; }
+}
+
+.hide .card_texts {
+    transition: padding 0.5s;
+    padding-left: 300px;
+}
+
+.cards {
+    overflow: hidden;
+}
+
 .cross {
     width: 16px;
     height: 16px;
@@ -54,13 +76,15 @@
     margin: 10px;
     float: right;
 }
-.cross span{
+
+.cross span {
     display: block;
     width: 14px;
     height: 2px;
     transform: rotate(45deg) translateY(5px) translateX(6px);
     background-color: #9E9E9E;
 }
+
 .cross span::before {
     content: "";
     display: block;
