@@ -26,17 +26,8 @@ $permission = $_SESSION['perm']; ?>
 </div>
 <div class="content">
     <?php
-    include 'conn.php';
-    $result = mysqli_query($conn, "SELECT * FROM `items`;");
-    if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_assoc($result)) {
-            echo '<a class="product" href="product.php?item_id=' . $row['id'] . '">
-        <img src="' . $row['image'] . '"/>
-        <div class="title">' . $row['title'] . '</div>
-        <div class="price">' . $row['price'] . '</div >
-    </a > ';
-        }
-    } else echo mysqli_error($result);
+    echo 'Вы вышли';
+    session_destroy();
     ?>
 </div>
 </body>
