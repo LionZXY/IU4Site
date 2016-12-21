@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles/notify.css?<?php echo time(); ?>">
     <link rel="stylesheet" type="text/css" href="styles/index.css?<?php echo time(); ?>">
     <link rel="stylesheet" type="text/css" href="styles/events.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="styles/messages.css?<?php echo time(); ?>">
     <link rel="stylesheet" type="text/css" href="styles/loader.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
@@ -40,7 +41,9 @@
 include 'head.php'
 ?>
 <div class="main">
-    <?php include 'events.php' ?>
+    <?php include 'events.php';
+    include 'message.php'; ?>
+
 </div>
 </body>
 </html>

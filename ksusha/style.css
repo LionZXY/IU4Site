@@ -1,0 +1,88 @@
+.head {
+    width: 100%;
+    margin-bottom: 2%;
+    height: 50px;
+    border: dashed black;
+}
+
+.menu_left {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.content {
+    padding-left: 2%;
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.product {
+    border: solid #9E9E9E 1px;
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    width: 250px;
+    height: 315px;
+}
+
+.product img {
+    width: 250px;
+    height: 250px;
+}
+
+.product .price {
+    font-size: 20px;
+    margin-top: 4px;
+    font-weight: bold;
+    margin-right: 16px;
+    float: right;
+}
+
+.product .title {
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu_left a {
+    background-color: #e67e22;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    color: black;
+    display: block;
+}
+
+.menu_left a:hover {
+    background-color: #9E9E9E;
+    transition: background-color 0.5s;
+}
+
+.comment .name::after {
+    content: ":";
+}
+
+.comment .name {
+    font-weight: bold;
+}
+
+.comment .comment_text {
+    margin-left: 10px;
+}
+
+form input, form textarea {
+    display: block;
+    margin: 10px;
+    width: 100%;
+}
+
+form input[type='submit'] {
+    float: right;
+    width: 100px;
+}
