@@ -1,13 +1,4 @@
-body {
-    margin: 0px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-family: 'Roboto', arial, 'Noto Sans Japanese', sans-serif;
-}
-
 #topBar {
-    position: absolute;
     z-index: 1;
     background: #e67e22;
     box-sizing: border-box;

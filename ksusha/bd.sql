@@ -1,10 +1,10 @@
-CREATE TABLE `users` (
- `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
- `name` text,
- `login` text NOT NULL,
- `password` text NOT NULL,
- `perm` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `name` text,
+  `login` text NOT NULL,
+  `password` text NOT NULL,
+  `perm` int(11) NOT NULL DEFAULT '0'
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `items` (
  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,

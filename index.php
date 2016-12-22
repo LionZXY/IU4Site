@@ -30,17 +30,12 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<?php
-/**
- * Created by PhpStorm.
- * User: lionzxy
- * Date: 07.12.16
- * Time: 23:12
- */
-
-include 'head.php'
-?>
+<div>
+    <?php
+    include 'head.php'
+    ?></div>
 <div class="main">
+
     <?php include 'events.php';
     include 'message.php'; ?>
 

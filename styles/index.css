@@ -1,8 +1,17 @@
 .main {
     width: 100%;
     height: 100%;
-    position: absolute;
-    padding-top: 64px;
     display: flex;
     overflow: hidden;
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Roboto', arial, 'Noto Sans Japanese', sans-serif;
 }

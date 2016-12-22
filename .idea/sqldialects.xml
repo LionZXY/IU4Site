@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/api/login.php" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/api/register.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/api/sendMessage.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ksusha/add.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ksusha/bd.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ksusha/product.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ksusha/register.php" dialect="MySQL" />
+  </component>
+</project>

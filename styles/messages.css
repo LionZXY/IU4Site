@@ -1,15 +1,110 @@
 .message_box {
+    overflow: scroll;
     width: 100%;
     height: 100%;
-    display: flex;
-    background-color: red;
-    border: dashed blue 10px;
+    display: inline-flex;
+    background: url("../source/image/background.jpg");
     flex-direction: column-reverse;
 }
+
 .message_box form {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #FAFBFC;
+    margin: 0px;
     flex-shrink: 0;
     width: 100%;
 }
-.message_box input {
+
+.message_box .input {
+    display: flex;
     width: 100%;
+    align-items: center;
+}
+
+.message_box input {
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.message_box .plus {
+    margin-right: 15px;
+    margin-top: -4px;
+    width: 36px;
+    height: 36px;
+    background: url("../source/image/ic_add_black_24dp_2x.png");
+    background-size: 36px 36px;
+}
+
+.message_box .send {
+    margin-left: 15px;
+    margin-top: -4px;
+    width: 36px;
+    height: 36px;
+    background: url("../source/image/ic_send_black_24dp_2x.png");
+    background-size: 36px 36px;
+}
+
+.messages {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+}
+
+.messages .m {
+    display: inline-flex;
+    align-items: center;
+    margin: 4px 10px;
+}
+
+.messages .m > div {
+    padding: 8px 16px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.messages .m_to {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.messages .m_to div {
+    background: #EFFDDE;
+    margin-right: 46px;
+}
+
+.messages .m_from div {
+    background: white;
+    margin-left: 46px;
+}
+
+.messages::-webkit-scrollbar {
+    width: 0;
+}
+
+.messages .m_from {
+    margin-right: auto;
+}
+
+.m .first {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.m img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.m_from img {
+    margin-right: 10px;
+}
+
+.m_to img {
+    margin-left: 10px;
 }
