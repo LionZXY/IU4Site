@@ -1,9 +1,8 @@
 <div id="drawerMenu">
     <div>
-        <?php
-        for ($i = 0; $i < 5; $i++)
-            echo '<a href><span class="iconClass" style="background-position: 0px -24px;"></span>Пункт ', $i, '</a>';
-        ?>
+        <a href="/"><span class="iconClass" style="background-position: 0px -24px;"></span>Домой</a>
+        <a href="/api/v1/logout.php"><span class="iconClass" style="background-position: 0px -24px;"></span>Выход</a>
+
     </div>
 </div>
 <button class="burger">
@@ -11,9 +10,9 @@
 </button>
 <div id="topBar">
     <div id="rightButtons">
-        <a id="roundAvatar">
-            <div id="triangleAva" class="triangle"></div>
-        </a>
+        <img id="roundAvatar" src="/source/image/lion_test.png">
+        <div id="triangleAva" class="triangle"></div>
+        </img>
         <a id="notifications" class="iconClass" href>
             <div id="triangleNotifications" class="triangle"></div>
         </a>

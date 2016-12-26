@@ -11,8 +11,9 @@
 }
 .loader {
     color: #e67e22;
-    margin: auto;
+    margin: -30px auto 30px;
     font-size: 10px;
+    align-self: center;
     position: relative;
     text-indent: -9999em;
     -webkit-transform: translateZ(0);

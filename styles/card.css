@@ -48,16 +48,9 @@
 
 .hide {
     transition: padding 0.5s, opacity 0.3s;
-    animation: hidden 0.5s;
     opacity: 0;
     padding-left: 400px;
 }
-
-@keyframes hidden {
-    99% {display: inherit   ;}
-    100% { display: none; }
-}
-
 .hide .card_texts {
     transition: padding 0.5s;
     padding-left: 300px;

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 <head><title>Главная страница</title>
     <meta charset="utf-8">
@@ -8,8 +9,12 @@
     <link rel="stylesheet" type="text/css" href="styles/notify.css?<?php echo time(); ?>">
     <link rel="stylesheet" type="text/css" href="styles/index.css?<?php echo time(); ?>">
     <link rel="stylesheet" type="text/css" href="styles/events.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="styles/login/material_input_text.css?<?php echo time(); ?>">
     <link rel="stylesheet" type="text/css" href="styles/messages.css?<?php echo time(); ?>">
-    <link rel="stylesheet" type="text/css" href="styles/loader.css">
+    <link rel="stylesheet" type="text/css" href="styles/login/login.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="styles/login/button.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="styles/login/material_input_file.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="styles/loader.css?<?php echo time(); ?>">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
@@ -28,6 +33,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script src="js/index.js"></script>
 </head>
 <body>
 <div>
@@ -35,10 +41,20 @@
     include 'head.php'
     ?></div>
 <div class="main">
-
-    <?php include 'events.php';
-    include 'message.php'; ?>
-
+    <?php
+    include "events.php";
+    ?>
+    <div class="message_box">
+        <?php //include 'message.php'?>
+    </div>
+    <script src="js/messages.js"></script>
 </div>
+<?php
+if (!isset($_SESSION['token_id']) || empty($_SESSION['token_id']))
+    include 'login.php';
+else {
+    echo "<script>sucsLogin();</script>";
+}
+?>
 </body>
 </html>

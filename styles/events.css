@@ -3,6 +3,7 @@
     width: 350px;
     min-width: 300px;
     height: 100%;
+    cursor: pointer;
     flex-shrink: 0;
 }
 

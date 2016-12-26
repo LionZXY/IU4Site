@@ -11,29 +11,11 @@ cross.forEach(function (item) {
         item.parentElement.classList.add("hide");
         var cardBlock = item.parentElement;
         var childNum = getChildNumber(cardBlock);
+        setTimeout(function () {
+            cardBlock.style.display = "none";
+        }, 400);
     })
 });
-
-function animate(draw, duration) {
-    var start = performance.now();
-
-    requestAnimationFrame(function animate(time) {
-        // определить, сколько прошло времени с начала анимации
-        var timePassed = time - start;
-
-        // возможно небольшое превышение времени, в этом случае зафиксировать конец
-        if (timePassed > duration) timePassed = duration;
-
-        // нарисовать состояние анимации в момент timePassed
-        draw(timePassed);
-
-        // если время анимации не закончилось - запланировать ещё кадр
-        if (timePassed < duration) {
-            requestAnimationFrame(animate);
-        }
-
-    });
-}
 
 function getChildNumber(node) {
     return Array.prototype.indexOf.call(node.parentNode.childNodes, node);

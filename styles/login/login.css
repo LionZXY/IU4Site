@@ -1,0 +1,86 @@
+.login_background {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: rgba(158, 158, 158, 0.8);
+    transition: opacity 0.5s;
+}
+
+.login_window {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+    background: rgba(256, 256, 256, 1);
+    min-height: 300px;
+    margin: auto;
+    opacity: 1 !important;
+}
+
+.login_window .submit_btn {
+    margin: 50px;
+    align-self: center;
+}
+.login_window button {
+    width: 400px;
+}
+.login_window .group, .login_window .file_input {
+    margin: 30px 50px 0px;
+}
+.login_window .file_input{
+    width: 360px;
+}
+.login_window form {
+    transition: height 0.5s;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.login_window .btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns div {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    margin: 0;
+    transition: background-color 0.5s;
+}
+
+.login_state .btns .login_btn {
+    background-color: white;
+}
+
+.login_state .btns .register_btn {
+    background-color: transparent;
+}
+
+.register_state .btns .login_btn {
+    background-color: transparent;
+}
+
+.register_state .btns .register_btn {
+    background-color: white;
+}
+
+.login_state .register_field {
+    display: none;
+    opacity: 0;
+}
+
+.register_state .register_field {
+    transition: opacity 0.5s;
+    display: block;
+    opacity: 1;
+}
+
+.btns {
+    background-color: #D2D8D8;
+}
