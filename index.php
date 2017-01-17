@@ -1,4 +1,5 @@
-<?php session_start(); ?>
+<?php session_start();
+$isLogin = isset($_SESSION['token_id']) && !empty($_SESSION['token_id']) && $_SESSION['token_id'] > 0; ?>
 <html>
 <head><title>Главная страница</title>
     <meta charset="utf-8">
@@ -42,19 +43,18 @@
     ?></div>
 <div class="main">
     <?php
-    include "events.php";
+    if ($isLogin)
+        include "events.php";
     ?>
     <div class="message_box">
         <?php //include 'message.php'?>
     </div>
+
     <script src="js/messages.js"></script>
 </div>
 <?php
-if (!isset($_SESSION['token_id']) || empty($_SESSION['token_id']))
+if (!$isLogin)
     include 'login.php';
-else {
-    echo "<script>sucsLogin();</script>";
-}
 ?>
 </body>
 </html>

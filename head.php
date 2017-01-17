@@ -10,7 +10,7 @@
 </button>
 <div id="topBar">
     <div id="rightButtons">
-        <img id="roundAvatar" src="/source/image/lion_test.png">
+        <img id="roundAvatar" src="/source/image/default-avatar.png">
         <div id="triangleAva" class="triangle"></div>
         </img>
         <a id="notifications" class="iconClass" href>

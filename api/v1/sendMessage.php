@@ -2,11 +2,12 @@
 include 'helpers/login.php';
 include 'helpers/conn.php';
 include 'helpers/dialogs.php';
+header('Content-Type: application/json');
 $token = $_REQUEST['token'];
 $toUser = mysqli_escape_string($conn, $_REQUEST['toUser']);
 $dialog = mysqli_escape_string($conn, $_REQUEST['dialog']);
 $msg = mysqli_escape_string($conn, $_REQUEST['msg']);
-ini_set('display_errors', 'On');
+
 $user = getUserFromToken($token, $conn);
 
 if ($user['status'] != 'sucs')

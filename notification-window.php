@@ -6,14 +6,16 @@
 <!--Card element 400 276-->
 <div class="cards">
     <div class="card_main_block">
-        <img class="notify-image" src="source/image/lion_test.png"/>
+        <img class="notify-image" src="source/image/default-avatar.png"/>
         <div role="button" class="cross">
             <span></span>
         </div>
         <div class="card_background">
             <div class="card_texts">
                 <div class="card_title">Никита Куликов</div>
-                <div class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanljjlk;khg;ig/ov.cv.ikv;ougb;ogb/o/;o</div>
+                <div class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aeneanljjlk;khg;ig/ov.cv.ikv;ougb;ogb/o/;o
+                </div>
             </div>
         </div>
     </div>
@@ -25,7 +27,9 @@
         <div class="card_background">
             <div class="card_texts">
                 <div class="card_title">Никита Куликов</div>
-                <div class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanljjlk;khg;ig/ov.cv.ikv;ougb;ogb/o/;o</div>
+                <div class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aeneanljjlk;khg;ig/ov.cv.ikv;ougb;ogb/o/;o
+                </div>
             </div>
         </div>
     </div>
@@ -38,7 +42,9 @@
         <div class="card_background">
             <div class="card_texts">
                 <div class="card_title">Никита Куликов</div>
-                <div class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanljjlk;khg;ig/ov.cv.ikv;ougb;ogb/o/;o</div>
+                <div class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aeneanljjlk;khg;ig/ov.cv.ikv;ougb;ogb/o/;o
+                </div>
             </div>
         </div>
     </div>

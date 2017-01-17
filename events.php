@@ -6,10 +6,15 @@ include 'api/v1/helpers/getUser.php';
 
 $dialogs = getDialogs(null, $conn);
 ?>
-    <div class="events">
-        <?php
-        foreach ($dialogs as $dialog) {
-            echo '<div data-row="' . $dialog['id'] . '" class="events_card">
+
+<div class="dialogs_head">
+      <div class="dialogs_add"></div>
+</div>
+
+<div class="events">
+    <?php
+    foreach ($dialogs as $dialog) {
+        echo '<div data-row="' . $dialog['id'] . '" class="events_card">
         <img class="round_ava" src="api/v1/image.php?type=avatar&avatar_id="' . $dialog['by_user'] . '/>
         <div class="events_texts">
             <div class="title_box">
@@ -19,11 +24,11 @@ $dialogs = getDialogs(null, $conn);
             <div class="events_text">' . $dialog['msg'] . '</div>
         </div>
     </div>';
-        }
-        ?>
+    }
+    ?>
 
-    </div>
-    <div class="vertical-line"></div>
+</div>
+<div class="vertical-line"></div>
 <?php
 function getNormalDate($str)
 {
@@ -38,3 +43,5 @@ function getNormalDate($str)
         return "вчера";
     else return date("j F");
 } ?>
+
+<script src="js/messages.js"></script>

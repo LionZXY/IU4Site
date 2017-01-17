@@ -2,7 +2,7 @@
 function queryRequest($type, $token, $conn, $avatar_id)
 {
     $debug = false; //TODO switch to false
-    $uploaddir = '/var/www/html/images/';
+    $uploaddir = '/var/www/uploads/images/';
     if ($debug)
         ini_set('display_errors', 'On');
     if (!file_exists($uploaddir)) {
@@ -82,8 +82,17 @@ function queryRequest($type, $token, $conn, $avatar_id)
                 header('Content-Length: ' . filesize($imageFile));
                 readfile($imageFile);
                 exit;
-            } else
-                return json_encode(array("status" => "err", "error_numb" => 18, "error_text" => "Запрашиваемый файл отсутсвует"));
+            } else {
+                $imageFile = "/var/www/html/source/image/default-avatar.png";
+                header('Content-Description: File Transfer');
+                header('Content-Type: application/octet-stream');
+                header('Content-Disposition: attachment; filename="default-avatar.png"');
+                header('Expires: 0');
+                header('Pragma: public');
+                header('Content-Length: ' . filesize($imageFile));
+                readfile($imageFile);
+            }
+            //return json_encode(array("status" => "err", "error_numb" => 18, "error_text" => "Запрашиваемый файл отсутсвует"));
         }
     }
 }

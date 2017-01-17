@@ -46,7 +46,7 @@ function getMessage($dialog, $token, $conn)
 
     $dialog = mysqli_escape_string($conn, $dialog);
     $user = getUserFromToken($token, $conn);
-
+    //TODO оптимизировать!
     if ($user['status'] != 'sucs')
         return ($user);
     $userid = $user['user_id'];
